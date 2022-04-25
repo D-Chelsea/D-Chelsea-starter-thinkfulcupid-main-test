@@ -60,8 +60,14 @@ header {
 }
 
 .logo {
+  flex-direction: column;
+
+  min-width: 0;
+  flex:auto;
   font-family: "Tangerine", cursive;
-  font-size: 72px;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  font-size: 40px;
   color: #ecdbc9;
 }
 
@@ -69,7 +75,7 @@ header nav {
   display: flex;
   justify-content: center;
 }
-/*makes the header able to flex with screen size */
+
 header nav ul {
   display: flex;
 }
@@ -79,6 +85,7 @@ header nav ul li {
 }
 
 header nav ul li a {
+  min-width: 0;
   color: #ecdbc9;
   text-decoration: none;
   padding: 0 20px 0 0;
@@ -96,17 +103,20 @@ form {
 }
 
 form label {
+  display: flex;
   font-weight: bold;
 }
-/*seperated each form type in order to use space-between to space them */
+
 form div {
   display: flex;
   justify-content: space-between;
 }
 
 form select, form input {
+  display: flex;
   margin-bottom: 20px;
   width: 180px;
+  min-width: 0;
 }
 
 form button {
@@ -130,28 +140,36 @@ footer p {
   padding: 20px;
 }
 
-/* -------  Media Query ------- (when commented the website looks like it was buit for mobile*/
+/* -------  Media Query ------- */
 
 @media all and (min-width: 480px) {
-/*makes the header and the nav seperate on each end*/
   header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0;
   }
 
   .logo {
-    margin: 15px 15px 15px 15px;
-    font-size: 50px;
-    justify-content: left;
+    margin: 14px 0 14px 20px;
+    font-size: 42px;
   }
   
-  nav ul {
+  header nav ul {
     align-items: center;
   }
 
   .group {
     align-items: center;
     flex-direction: row;
+  }
+}
+
+@media all and (max-width: 350px){
+  .logo{
+    font-size: 25px;
+  }
+  header nav ul li a{
+    padding: 0 10px 0 0;
+
   }
 }
