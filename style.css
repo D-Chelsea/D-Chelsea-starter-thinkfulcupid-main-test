@@ -22,8 +22,9 @@ p {
   margin: 0;
 }
 
+
 section {
-  padding: 20px;
+  padding-top: 20px;
 }
 
 section.alternate-background {
