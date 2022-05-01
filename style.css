@@ -152,7 +152,7 @@ footer p {
 
   .logo {
     margin: 14px 0 14px 20px;
-    font-size: 42px;
+    font-size: 60px;
   }
   
   header nav ul {
@@ -167,7 +167,7 @@ footer p {
 
 @media all and (max-width: 350px){
   .logo{
-    font-size: 42px;
+    font-size: 60px;
   }
   header nav ul li a{
     padding: 0 10px 0 0;
